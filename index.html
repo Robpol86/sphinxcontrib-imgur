@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -8,10 +9,12 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Imgur Sphinx Extension &mdash; sphinxcontrib-imgur</title>
+  <title>sphinxcontrib-imgur 1.0.0 &mdash; sphinxcontrib-imgur</title>
   
 
   
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
   
 
   
@@ -28,10 +31,12 @@
   
 
   
+    <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+  
 
   
     <link rel="top" title="sphinxcontrib-imgur" href="#"/>
-        <link rel="next" title="Usage" href="usage.html"/> 
+        <link rel="next" title="Installation" href="install.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -60,7 +65,7 @@
             
             
               <div class="version">
-                1.0
+                1.0.0
               </div>
             
           
@@ -81,9 +86,15 @@
           
             
             
-                <ul>
+                <p class="caption"><span class="caption-text">General</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 
             
@@ -118,11 +129,13 @@
   <ul class="wy-breadcrumbs">
     <li><a href="#">Docs</a> &raquo;</li>
       
-    <li>Imgur Sphinx Extension</li>
+    <li>sphinxcontrib-imgur 1.0.0</li>
     <li class="wy-breadcrumbs-aside">
       
           
-          <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+          
+            <a href="https://github.com/Robpol86/sphinxcontrib-imgur/blob/master/docs/index.rst" class="fa fa-github"> Edit on GitHub</a>
+          
         
       
     </li>
@@ -132,21 +145,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="imgur-sphinx-extension">
-<h1>Imgur Sphinx Extension<a class="headerlink" href="#imgur-sphinx-extension" title="Permalink to this headline">¶</a></h1>
-<p>Use <a class="reference external" href="http://imgur.com/">Imgur</a> images and albums in your Sphinx documents instead of hosting them locally. Save millions on hosting costs!</p>
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><a href="v1.0.0/index.html"><b>Warning:</b> This document is for the development version of sphinxcontrib-imgur. The latest version is v1.0.0.</a></p>
+
+  <div class="section" id="sphinxcontrib-imgur-version">
+<h1>sphinxcontrib-imgur 1.0.0<a class="headerlink" href="#sphinxcontrib-imgur-version" title="Permalink to this headline">¶</a></h1>
+<p>Use <a class="reference external" href="http://imgur.com/">Imgur</a> images and albums in your Sphinx documents instead of hosting them locally. Save
+millions on hosting costs!</p>
 <div class="section" id="project-links">
 <h2>Project Links<a class="headerlink" href="#project-links" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Documentation: <a class="reference external" href="https://sphinxcontrib-imgur.readthedocs.org">https://sphinxcontrib-imgur.readthedocs.org</a></li>
+<li>Documentation: <a class="reference external" href="https://robpol86.github.io/sphinxcontrib-imgur">https://robpol86.github.io/sphinxcontrib-imgur</a></li>
 <li>Source code: <a class="reference external" href="https://github.com/Robpol86/sphinxcontrib-imgur">https://github.com/Robpol86/sphinxcontrib-imgur</a></li>
 <li>PyPI homepage: <a class="reference external" href="https://pypi.python.org/pypi/sphinxcontrib-imgur">https://pypi.python.org/pypi/sphinxcontrib-imgur</a></li>
 </ul>
-</div>
-<div class="section" id="contents">
-<h2>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
+<div class="toctree-wrapper compound" id="general">
+<p class="caption"><span class="caption-text">General</span><a class="headerlink" href="#general" title="Permalink to this toctree">¶</a></p>
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#pip-install">Pip Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#latest-from-github">Latest from GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#clone-and-install">Clone and Install</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="usage.html#installation">Installation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="usage.html#configuration">Configuration</a></li>
@@ -154,14 +182,30 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#inline-roles">Inline Roles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="examples.html#embedded-directives">Embedded Directives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#inline-roles">Inline Roles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#titles-and-descriptions">Titles and Descriptions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="examples.html#embedded-directives">Embedded Directives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#album-with-details">Album With Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#album-without-details">Album Without Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#image-with-details">Image With Details</a></li>
+<li class="toctree-l3"><a class="reference internal" href="examples.html#image-without-details">Image Without Details</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </div>
+<div class="toctree-wrapper compound" id="appendix">
+<p class="caption"><span class="caption-text">Appendix</span><a class="headerlink" href="#appendix" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
 </div>
 </div>
+</div>
+
 
 
            </div>
@@ -170,7 +214,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="install.html" class="btn btn-neutral float-right" title="Installation" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
     </div>
@@ -180,7 +224,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Robpol86.
+        &copy; Copyright 2016, @Robpol86.
 
     </p>
   </div>
@@ -198,16 +242,17 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Other Versions</span>
-        v: v1.0.0
+        v: master
         <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
         <dl>
             <dt>Tags</dt>
-            <dd><a href="index.html">v1.0.0</a></dd>
+            <dd><a href="v1.0.0/index.html">v1.0.0</a></dd>
         </dl>
         <dl>
             <dt>Branches</dt>
+            <dd><a href="stage/index.html">stage</a></dd>
             <dd><a href="master/index.html">master</a></dd>
             <dd><a href="wip_ci_split/index.html">wip_ci_split</a></dd>
         </dl>
@@ -220,10 +265,10 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0',
+            VERSION:'1.0.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  false
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

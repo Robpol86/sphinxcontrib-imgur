@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -12,6 +13,8 @@
   
 
   
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
   
 
   
@@ -28,9 +31,12 @@
   
 
   
+    <link rel="stylesheet" href="_static/banner.css" type="text/css" />
+  
 
   
     <link rel="top" title="sphinxcontrib-imgur" href="index.html"/>
+        <link rel="next" title="Changelog" href="changelog.html"/>
         <link rel="prev" title="Usage" href="usage.html"/> 
 
   
@@ -60,7 +66,7 @@
             
             
               <div class="version">
-                1.0
+                1.0.0
               </div>
             
           
@@ -81,7 +87,9 @@
           
             
             
-                <ul class="current">
+                <p class="caption"><span class="caption-text">General</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#inline-roles">Inline Roles</a><ul>
@@ -97,6 +105,10 @@
 </li>
 </ul>
 </li>
+</ul>
+<p class="caption"><span class="caption-text">Appendix</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
 </ul>
 
             
@@ -135,7 +147,9 @@
     <li class="wy-breadcrumbs-aside">
       
           
-          <a href="_sources/examples.txt" rel="nofollow"> View page source</a>
+          
+            <a href="https://github.com/Robpol86/sphinxcontrib-imgur/blob/master/docs/examples.rst" class="fa fa-github"> Edit on GitHub</a>
+          
         
       
     </li>
@@ -145,6 +159,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><a href="v1.0.0/examples.html"><b>Warning:</b> This document is for the development version of sphinxcontrib-imgur. The latest version is v1.0.0.</a></p>
+
   <div class="section" id="examples">
 <span id="id1"></span><h1>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
 <p>This page shows several example use cases for the extension.</p>
@@ -170,6 +194,19 @@ http://www2.robpol86.com/guides/Wireless-Charging-Car-Dock/</li>
 <h2>Embedded Directives<a class="headerlink" href="#embedded-directives" title="Permalink to this headline">¶</a></h2>
 <p>Embed Imgur albums or images using their JavaScript option. This is the same as the &#8220;Embed album&#8221; link when you view
 an album on imgur.com.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If you&#8217;re viewing these docs locally (e.g. the URL starts with <code class="docutils literal"><span class="pre">file://</span></code>), then the albums/images below won&#8217;t
+load. The Imgur JavaScript is loaded from <strong>//s.imgur.com/min/embed.js</strong> so when viewing locally it tries and fails
+to find <a class="reference external" href="file://s.imgur.com/min/embed.js">file://s.imgur.com/min/embed.js</a>.</p>
+<p>A work around for this is to view these docs from a local HTTP server. You can quickly fire one up with one of these
+two commands:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">cd</span> docs/_build/html <span class="o">&amp;&amp;</span> python2.7 -m SimpleHTTPServer 8080
+<span class="nb">cd</span> docs/_build/html <span class="o">&amp;&amp;</span> python3.4 -m http.server 8080
+</pre></div>
+</div>
+<p class="last">Then browse to: <a class="reference external" href="http://localhost:8080/">http://localhost:8080/</a></p>
+</div>
 <div class="section" id="album-with-details">
 <h3>Album With Details<a class="headerlink" href="#album-with-details" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">imgur-embed</span><span class="p">::</span> a/hWyW0
@@ -200,11 +237,14 @@ an album on imgur.com.</p>
 </div>
 
 
+
            </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="changelog.html" class="btn btn-neutral float-right" title="Changelog" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="usage.html" class="btn btn-neutral" title="Usage" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -216,7 +256,7 @@ an album on imgur.com.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, Robpol86.
+        &copy; Copyright 2016, @Robpol86.
 
     </p>
   </div>
@@ -234,18 +274,19 @@ an album on imgur.com.</p>
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Other Versions</span>
-        v: v1.0.0
+        v: master
         <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
         <dl>
             <dt>Tags</dt>
-            <dd><a href="index.html">v1.0.0</a></dd>
+            <dd><a href="v1.0.0/examples.html">v1.0.0</a></dd>
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="master/index.html">master</a></dd>
-            <dd><a href="wip_ci_split/index.html">wip_ci_split</a></dd>
+            <dd><a href="stage/examples.html">stage</a></dd>
+            <dd><a href="master/examples.html">master</a></dd>
+            <dd><a href="wip_ci_split/examples.html">wip_ci_split</a></dd>
         </dl>
     </div>
 </div>
@@ -256,10 +297,10 @@ an album on imgur.com.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'1.0',
+            VERSION:'1.0.0',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  false
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>

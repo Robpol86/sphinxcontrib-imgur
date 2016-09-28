@@ -216,13 +216,19 @@ multiple changes in your documentation without bombarding the API. Does not appl
 </dd></dl>
 
 <dl class="attribute">
-<dt id="imgur_api_test_response">
-<code class="descname">imgur_api_test_response</code><a class="headerlink" href="#imgur_api_test_response" title="Permalink to this definition">¶</a></dt>
+<dt id="imgur_api_test_response_albums">
+<code class="descname">imgur_api_test_response_albums</code><a class="headerlink" href="#imgur_api_test_response_albums" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unless you&#8217;re developing a Sphinx extension you won&#8217;t need this.</p>
-<p>If defined, should be a nested dictionary. Keys are Imgur image or album (starting with <code class="docutils literal"><span class="pre">a/</span></code>) IDs, values are
-dictionaries whose keys are &#8220;title&#8221;, &#8220;description&#8221;, and other API reply fields and values are what you&#8217;d expect. If
-this option is defined, the Imgur API will always be skipped and any missing Imgur IDs will cause <code class="docutils literal"><span class="pre">KeyError</span></code> to be
-raised.</p>
+<p>If defined, should be a nested dictionary. Keys are Imgur album IDs, values are the parsed JSON dictionaries whose
+keys are &#8220;title&#8221;, &#8220;description&#8221;, and other API reply fields. If this option is defined, the Imgur API will always be
+skipped and any missing Imgur IDs will cause <code class="docutils literal"><span class="pre">KeyError</span></code> to be raised.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="imgur_api_test_response_images">
+<code class="descname">imgur_api_test_response_images</code><a class="headerlink" href="#imgur_api_test_response_images" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unless you&#8217;re developing a Sphinx extension you won&#8217;t need this.</p>
+<p>Similar to <a class="reference internal" href="#imgur_api_test_response_albums" title="imgur_api_test_response_albums"><code class="xref py py-attr docutils literal"><span class="pre">imgur_api_test_response_albums</span></code></a> but for Imgur image IDs instead of album IDs.</p>
 </dd></dl>
 
 <dl class="attribute">
@@ -317,7 +323,6 @@ To see them in action visit the <a class="reference internal" href="examples.htm
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="stage/usage.html">stage</a></dd>
             <dd><a href="rewrite/usage.html">rewrite</a></dd>
             <dd><a href="master/usage.html">master</a></dd>
             <dd><a href="wip_ci_split/usage.html">wip_ci_split</a></dd>

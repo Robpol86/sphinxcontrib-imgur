@@ -220,7 +220,7 @@ multiple changes in your documentation without bombarding the API. Does not appl
 <code class="descname">imgur_api_test_response_albums</code><a class="headerlink" href="#imgur_api_test_response_albums" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unless you&#8217;re developing a Sphinx extension you won&#8217;t need this.</p>
 <p>If defined, should be a nested dictionary. Keys are Imgur album IDs, values are the parsed JSON dictionaries whose
-keys are &#8220;title&#8221;, &#8220;description&#8221;, and other API reply fields. If this option is defined, the Imgur API will always be
+keys are &#8220;data&#8221;, &#8220;status&#8221;, and other API reply fields. If this option is defined, the Imgur API will always be
 skipped and any missing Imgur IDs will cause <code class="docutils literal"><span class="pre">KeyError</span></code> to be raised.</p>
 </dd></dl>
 
@@ -323,9 +323,8 @@ To see them in action visit the <a class="reference internal" href="examples.htm
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="stage/usage.html">stage</a></dd>
-            <dd><a href="rewrite/usage.html">rewrite</a></dd>
             <dd><a href="master/usage.html">master</a></dd>
+            <dd><a href="rewrite/usage.html">rewrite</a></dd>
             <dd><a href="wip_ci_split/usage.html">wip_ci_split</a></dd>
         </dl>
     </div>

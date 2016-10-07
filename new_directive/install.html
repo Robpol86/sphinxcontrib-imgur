@@ -3,7 +3,6 @@
 
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -23,7 +22,7 @@
     </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; sphinxcontrib-imgur</title>
+  <title>Installation &mdash; sphinxcontrib-imgur</title>
   
 
   
@@ -51,7 +50,9 @@
   
 
   
-    <link rel="top" title="sphinxcontrib-imgur" href="index.html"/> 
+    <link rel="top" title="sphinxcontrib-imgur" href="index.html"/>
+        <link rel="next" title="Usage" href="usage.html"/>
+        <link rel="prev" title="sphinxcontrib-imgur 1.0.0" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -102,8 +103,13 @@
             
             
                 <p class="caption"><span class="caption-text">General</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pip-install">Pip Install</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latest-from-github">Latest from GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clone-and-install">Clone and Install</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
 </ul>
@@ -132,7 +138,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -144,12 +150,12 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Installation</li>
     <li class="wy-breadcrumbs-aside">
       
           
           
-            <a href="https://github.com/Robpol86/sphinxcontrib-imgur/blob/split_roles/docs/genindex.rst" class="fa fa-github"> Edit on GitHub</a>
+            <a href="https://github.com/Robpol86/sphinxcontrib-imgur/blob/new_directive/docs/install.rst" class="fa fa-github"> Edit on GitHub</a>
           
         
       
@@ -160,61 +166,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
+  
 
-<h1 id="index">Index</h1>
 
-<div class="genindex-jumpbox">
- <a href="#H"><strong>H</strong></a>
- | <a href="#I"><strong>I</strong></a>
- 
+    
+    
+
+
+
+    <p class="scv-banner scv-sphinx_rtd_theme"><b>Warning:</b> This document is for the development version of sphinxcontrib-imgur.</p>
+<div class="section" id="installation">
+<span id="install"></span><h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Getting started is pretty simple. The first step is to install the library.</p>
+<div class="section" id="pip-install">
+<h2>Pip Install<a class="headerlink" href="#pip-install" title="Permalink to this headline">¶</a></h2>
+<p>The easiest way to get sphinxcontrib-imgur is to use <a class="reference external" href="https://pip.pypa.io">pip</a>. Simply run this command.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install sphinxcontrib-imgur
+</pre></div>
 </div>
-<h2 id="H">H</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="usage.html#hide_post_details">hide_post_details</a>
-  </dt>
-
-  </dl></td>
-</tr></table>
-
-<h2 id="I">I</h2>
-<table style="width: 100%" class="indextable genindextable"><tr>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="usage.html#role-imgur-description">imgur-description (role)</a>
-  </dt>
-
-      
-  <dt><a href="usage.html#directive-imgur-embed">imgur-embed (directive)</a>
-  </dt>
-
-      
-  <dt><a href="usage.html#role-imgur-title">imgur-title (role)</a>
-  </dt>
-
-  </dl></td>
-  <td style="width: 33%" valign="top"><dl>
-      
-  <dt><a href="usage.html#imgur_api_cache_ttl">imgur_api_cache_ttl</a>
-  </dt>
-
-      
-  <dt><a href="usage.html#imgur_client_id">imgur_client_id</a>
-  </dt>
-
-      
-  <dt><a href="usage.html#imgur_hide_post_details">imgur_hide_post_details</a>
-  </dt>
-
-  </dl></td>
-</tr></table>
-
+</div>
+<div class="section" id="latest-from-github">
+<h2>Latest from GitHub<a class="headerlink" href="#latest-from-github" title="Permalink to this headline">¶</a></h2>
+<p>You can also elect to install the latest bleeding-edge version by using pip to install directly from the GitHub
+repository.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install git+https://github.com/Robpol86/sphinxcontrib-imgur.git
+</pre></div>
+</div>
+</div>
+<div class="section" id="clone-and-install">
+<h2>Clone and Install<a class="headerlink" href="#clone-and-install" title="Permalink to this headline">¶</a></h2>
+<p>Lastly you can also just clone the repo and install from it. Usually you only need to do this if you plan on
+<a class="reference external" href="https://github.com/Robpol86/sphinxcontrib-imgur/blob/master/CONTRIBUTING.md">contributing</a> to the project.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>git clone https://github.com/Robpol86/sphinxcontrib-imgur.git
+<span class="nb">cd</span> sphinxcontrib-imgur
+python setup.py install
+</pre></div>
+</div>
+</div>
+</div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="sphinxcontrib-imgur 1.0.0" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -239,7 +242,7 @@
 <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
         <span class="fa fa-book"> Other Versions</span>
-        v: split_roles
+        v: new_directive
         <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
@@ -249,9 +252,9 @@
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="genindex.html">split_roles</a></dd>
-            <dd><a href="../master/index.html">master</a></dd>
-            <dd><a href="../wip_ci_split/index.html">wip_ci_split</a></dd>
+            <dd><a href="install.html">new_directive</a></dd>
+            <dd><a href="../master/install.html">master</a></dd>
+            <dd><a href="../wip_ci_split/install.html">wip_ci_split</a></dd>
         </dl>
     </div>
 </div>

@@ -111,13 +111,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#titles-and-descriptions">Titles and Descriptions</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#embedded-directives">Embedded Directives</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#embedded-directive">Embedded Directive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#album-with-details">Album With Details</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#album-without-details">Album Without Details</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#image-with-details">Image With Details</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#image-without-details">Image Without Details</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#image-directive">Image Directive</a></li>
 </ul>
 </li>
 </ul>
@@ -204,8 +205,8 @@ http://www2.robpol86.com/guides/Wireless-Charging-Car-Dock/</li>
 </ul>
 </div>
 </div>
-<div class="section" id="embedded-directives">
-<h2>Embedded Directives<a class="headerlink" href="#embedded-directives" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="embedded-directive">
+<h2>Embedded Directive<a class="headerlink" href="#embedded-directive" title="Permalink to this headline">¶</a></h2>
 <p>Embed Imgur albums or images using their JavaScript option. This is the same as the &#8220;Embed album&#8221; link when you view
 an album on imgur.com.</p>
 <div class="admonition note">
@@ -248,6 +249,12 @@ two commands:</p>
 </div>
 <blockquote class="imgur-embed-pub" data-context="false" data-id="Srt4owo" lang="en"><a class="reference external" href="https://imgur.com/Srt4owo">Loading...</a></blockquote><script async="" charset="utf-8" src="//s.imgur.com/min/embed.js"></script></div>
 </div>
+<div class="section" id="image-directive">
+<h2>Image Directive<a class="headerlink" href="#image-directive" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">imgur-image</span><span class="p">::</span> 611EovQ
+</pre></div>
+</div>
+<img alt="i.imgur.com/611EovQ.jpg" src="//i.imgur.com/611EovQ.jpg"></div>
 </div>
 
 
@@ -297,9 +304,8 @@ two commands:</p>
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="stage/examples.html">stage</a></dd>
-            <dd><a href="new_directive/examples.html">new_directive</a></dd>
             <dd><a href="master/examples.html">master</a></dd>
+            <dd><a href="new_directive/examples.html">new_directive</a></dd>
             <dd><a href="wip_ci_split/examples.html">wip_ci_split</a></dd>
         </dl>
     </div>

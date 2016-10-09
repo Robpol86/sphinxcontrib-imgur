@@ -228,6 +228,31 @@ multiple changes in your documentation without bombarding the API. Does not appl
 <p>The default value of <code class="docutils literal"><span class="pre">hide_post_details</span></code> in embedded albums/images. Overridden in the directive.</p>
 </dd></dl>
 
+<dl class="attribute">
+<dt id="imgur_target_default_largest">
+<code class="descname">imgur_target_default_largest</code><a class="headerlink" href="#imgur_target_default_largest" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>Default: False</em></p>
+<p>All <a class="reference internal" href="#directive-imgur-image" title="imgur-image directive"><code class="xref rst rst-dir docutils literal"><span class="pre">imgur-image</span></code></a> images by default don&#8217;t link to anything. Setting this to <code class="docutils literal"><span class="pre">true</span></code> results in all Imgur
+images to link to the original/full size version of the image by default.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="imgur_target_default_page">
+<code class="descname">imgur_target_default_page</code><a class="headerlink" href="#imgur_target_default_page" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>Default: False</em></p>
+<p>Like <a class="reference internal" href="#imgur_target_default_largest" title="imgur_target_default_largest"><code class="xref py py-attr docutils literal"><span class="pre">imgur_target_default_largest</span></code></a> but instead links to the image&#8217;s page on Imgur by default (with the share
+buttons, etc). Overrides <a class="reference internal" href="#imgur_target_default_largest" title="imgur_target_default_largest"><code class="xref py py-attr docutils literal"><span class="pre">imgur_target_default_largest</span></code></a> if both are set.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="imgur_target_default_gallery">
+<code class="descname">imgur_target_default_gallery</code><a class="headerlink" href="#imgur_target_default_gallery" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>Default: False</em></p>
+<p>Like <a class="reference internal" href="#imgur_target_default_largest" title="imgur_target_default_largest"><code class="xref py py-attr docutils literal"><span class="pre">imgur_target_default_largest</span></code></a> but instead links to the albums&#8217;s gallery on Imgur by default. Only
+applies to albums (which <a class="reference internal" href="#directive-imgur-image" title="imgur-image directive"><code class="xref rst rst-dir docutils literal"><span class="pre">imgur-image</span></code></a> displays the cover image). Overrides
+<a class="reference internal" href="#imgur_target_default_largest" title="imgur_target_default_largest"><code class="xref py py-attr docutils literal"><span class="pre">imgur_target_default_largest</span></code></a> and <a class="reference internal" href="#imgur_target_default_page" title="imgur_target_default_page"><code class="xref py py-attr docutils literal"><span class="pre">imgur_target_default_page</span></code></a> if all are set.</p>
+</dd></dl>
+
 </div>
 <div class="section" id="roles-and-directives">
 <h2>Roles and Directives<a class="headerlink" href="#roles-and-directives" title="Permalink to this headline">¶</a></h2>
@@ -265,13 +290,37 @@ Display an Imgur image in the document the same way a regular image is displayed
 <dl class="attribute">
 <dt id="align">
 <code class="descname">align</code><a class="headerlink" href="#align" title="Permalink to this definition">¶</a></dt>
-<dd><p>Align image horizontally (same as the regular image directive). Valid values: &#8220;left&#8221;, &#8220;center&#8221;, or &#8220;right&#8221;</p>
+<dd><p>Same as the regular image directive. Align image horizontally. Valid values: &#8220;left&#8221;, &#8220;center&#8221;, or &#8220;right&#8221;</p>
 </dd></dl>
 
 <dl class="attribute">
 <dt id="alt">
 <code class="descname">alt</code><a class="headerlink" href="#alt" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alternate text in the <code class="docutils literal"><span class="pre">&lt;img&gt;</span></code> tag. Same as the regular image directive.</p>
+<dd><p>Same as the regular image directive. Alternate text in the <code class="docutils literal"><span class="pre">&lt;img&gt;</span></code> tag.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="target">
+<code class="descname">target</code><a class="headerlink" href="#target" title="Permalink to this definition">¶</a></dt>
+<dd><p>Same as the regular image directive. TODO</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="target_default_largest">
+<code class="descname">target_default_largest</code><a class="headerlink" href="#target_default_largest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overrides <a class="reference internal" href="#imgur_target_default_largest" title="imgur_target_default_largest"><code class="xref py py-attr docutils literal"><span class="pre">imgur_target_default_largest</span></code></a> for this specific image.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="target_default_page">
+<code class="descname">target_default_page</code><a class="headerlink" href="#target_default_page" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overrides <a class="reference internal" href="#imgur_target_default_page" title="imgur_target_default_page"><code class="xref py py-attr docutils literal"><span class="pre">imgur_target_default_page</span></code></a> for this specific image.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="target_default_gallery">
+<code class="descname">target_default_gallery</code><a class="headerlink" href="#target_default_gallery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Overrides <a class="reference internal" href="#imgur_target_default_gallery" title="imgur_target_default_gallery"><code class="xref py py-attr docutils literal"><span class="pre">imgur_target_default_gallery</span></code></a> for this specific image.</p>
 </dd></dl>
 
 </dd></dl>
@@ -326,8 +375,8 @@ Display an Imgur image in the document the same way a regular image is displayed
         </dl>
         <dl>
             <dt>Branches</dt>
-            <dd><a href="../master/usage.html">master</a></dd>
             <dd><a href="usage.html">new_directive</a></dd>
+            <dd><a href="../master/usage.html">master</a></dd>
             <dd><a href="../wip_ci_split/usage.html">wip_ci_split</a></dd>
         </dl>
     </div>
